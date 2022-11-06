@@ -10,7 +10,7 @@ import { GiPowerGenerator } from "react-icons/gi";
 export const Container = styled.div`
   height: auto;
   width: auto;
-  background-color: #baf2f5;
+  background-color: #e6e6ff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,7 +30,7 @@ export const WorkTitle = styled.h1`
   color: #0c8fbf;
 `;
 
-export const WorkHead = styled.h1`
+export const WorkHead = styled.p`
   font-size: 2rem;
   margin: 1em 0 0 0;
   padding: 0 2%;
@@ -80,14 +80,15 @@ export const IconImg = styled.div`
 export const IconDesc = styled.p`
   display: flex;
   flex-direction: column;
-
   justify-content: start;
   font-size: 1rem;
+  font-weight: 700;
 `;
 export const IconHead = styled.h2`
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding: 0 2%;
   margin: 0;
+  color: #0c8fbf;
   @media screen and (min-width: 37.5em) {
     margin-top: 1em;
   }
@@ -97,6 +98,12 @@ export const IconContainer = styled.div`
   width: 100%;
   justify-content: start;
   align-content: start;
+
+  ul {
+    /* margin: 0; */
+    padding: 0;
+    list-style-type: square;
+  }
 `;
 
 export const NetworkE = styled(AiOutlineCluster)`

@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import {
   Container,
@@ -14,7 +14,6 @@ import {
   SocialIcons,
   FormHead,
   FormPara,
-  ContactPhone,
   CheckBox,
   CheckBoxHead,
   Footer,
@@ -28,53 +27,62 @@ import {
   Mail,
   World,
 } from "./styledContact";
-import Thanks from "./thanks";
 
 const ContactUs = () => {
   const form = useRef();
 
   const [values, setValues] = useState({
-    user_name: "",
+    first_name: "",
+    last_name: "",
+    phone: "",
+    country: "",
+    org_name: "",
     user_email: "",
     message: "",
+    enterpriseNetwork: false,
+    opticalFiber: false,
+    cloud: false,
+    security: false,
+    collaboration: false,
+    supply: false,
+    power: false,
   });
-
-  const [status, setStatus] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_xy69d9l",
-        "template_pcgqsc8",
+        "service_6sdgols",
+        "contact_form",
         form.current,
-        "Tp5HvUQoquBqaytmc"
+        "48ts1H0Ugmsqql7KS"
       )
       .then(
         (response) => {
           console.log("sent", response);
           setValues({
-            user_name: "",
+            first_name: "",
+            last_name: "",
+            phone: "",
+            country: "",
+            org_name: "",
             user_email: "",
             message: "",
+            enterpriseNetwork: false,
+            opticalFiber: false,
+            cloud: false,
+            security: false,
+            collaboration: false,
+            supply: false,
+            power: false,
           });
-
-          setStatus("SUCCESS");
         },
         (error) => {
           console.log(error.text);
         }
       );
   };
-
-  useEffect(() => {
-    if (status === "SUCCESS") {
-      setTimeout(() => {
-        setStatus("");
-      }, 3000);
-    }
-  }, [status]);
 
   const handleChange = (e) => {
     setValues((values) => ({
@@ -169,6 +177,8 @@ const ContactUs = () => {
                 placeholder="John"
                 required
                 name="first_name"
+                onChange={handleChange}
+                value={values.first_name}
               />
             </span>
             <br />
@@ -180,6 +190,7 @@ const ContactUs = () => {
                 name="last_name"
                 placeholder="Doe"
                 onChange={handleChange}
+                value={values.last_name}
               />
             </span>
             <br />
@@ -205,7 +216,6 @@ const ContactUs = () => {
                 required
                 name="user_email"
                 onChange={handleChange}
-                placeholder="kahavadesigner@gmail.com"
                 value={values.user_email}
               />
             </span>
@@ -215,51 +225,101 @@ const ContactUs = () => {
               <input
                 type="tel"
                 name="phone"
-                placeholder="0756166907"
+                placeholder="0715262509"
                 pattern="[0-9]{10}"
                 required
+                onChange={handleChange}
+                value={values.phone}
               />
             </span>
             <br />
             <span>
               <label>Country</label>
-              <input type="text" required />
+              <input
+                name="country"
+                type="text"
+                required
+                onChange={handleChange}
+                value={values.country}
+              />
             </span>
             <br />
             <CheckBoxHead>what do you want us to help you</CheckBoxHead>
             <CheckBox>
               <span>
-                <input type="checkbox" name="opticalFiber" value="iNeedIt" />
+                <input
+                  type="checkbox"
+                  name="enterpriseNetwork"
+                  onChange={handleChange}
+                  value="Enterprise Networking"
+                  checked={values.enterpriseNetwork}
+                />
                 <label>Enterprise Networking</label>
               </span>
 
               <span>
-                <input type="checkbox" name="opticalFiber" value="iNeedIt" />
+                <input
+                  type="checkbox"
+                  name="opticalFiber"
+                  onChange={handleChange}
+                  checked={values.opticalFiber}
+                  value="Structured Cabling & Optic Fiber"
+                />
                 <label>Structured Cabling & Optic Fiber</label>
               </span>
 
               <span>
-                <input type="checkbox" name="opticalFiber" value="iNeedIt" />
+                <input
+                  type="checkbox"
+                  name="cloud"
+                  onChange={handleChange}
+                  checked={values.cloud}
+                  value="Cloud & Data Center"
+                />
                 <label>Cloud & Data Center</label>
               </span>
 
               <span>
-                <input type="checkbox" name="opticalFiber" value="iNeedIt" />
+                <input
+                  type="checkbox"
+                  name="security"
+                  onChange={handleChange}
+                  checked={values.security}
+                  value="Security"
+                />
                 <label>Security</label>
               </span>
 
               <span>
-                <input type="checkbox" name="opticalFiber" value="iNeedIt" />
-                <label>Collaboration, Contact Center &</label>
+                <input
+                  type="checkbox"
+                  name="collaboration"
+                  onChange={handleChange}
+                  checked={values.collaboration}
+                  value="Collaboration, Contact Center"
+                />
+                <label>Collaboration, Contact Center</label>
               </span>
 
               <span>
-                <input type="checkbox" name="opticalFiber" value="iNeedIt" />
+                <input
+                  type="checkbox"
+                  name="power"
+                  onChange={handleChange}
+                  checked={values.power}
+                  value="Power Backup System & Batteries"
+                />
                 <label>Power Backup System & Batteries</label>
               </span>
 
               <span>
-                <input type="checkbox" name="opticalFiber" value="iNeedIt" />
+                <input
+                  type="checkbox"
+                  name="supply"
+                  onChange={handleChange}
+                  checked={values.supply}
+                  value="Supply, Install & Maintain of ICT Products"
+                />
                 <label>Supply, Install & Maintain of ICT Products</label>
               </span>
             </CheckBox>

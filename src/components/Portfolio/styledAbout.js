@@ -46,7 +46,14 @@ export const PortImg1 = styled.div`
 
   img {
     width: 95%;
-    height: 20em;
+    height: auto;
+    object-fit: contain;
+    object-position: bottom;
+
+    @media screen and (min-width: 40em) {
+      width: 95%;
+      height: 20em;
+    }
   }
 `;
 
@@ -65,7 +72,14 @@ export const PortImg2 = styled.div`
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   img {
     width: 95%;
-    height: 20em;
+    height: auto;
+    object-fit: contain;
+    object-position: bottom;
+
+    @media screen and (min-width: 40em) {
+      width: 95%;
+      height: 20em;
+    }
   }
 `;
 
@@ -85,7 +99,14 @@ export const PortImg3 = styled.div`
 
   img {
     width: 95%;
-    height: 20em;
+    height: auto;
+    object-fit: contain;
+    object-position: bottom;
+
+    @media screen and (min-width: 40em) {
+      width: 95%;
+      height: 20em;
+    }
   }
 `;
 

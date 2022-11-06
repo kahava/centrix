@@ -50,18 +50,25 @@ const About = () => {
       <TitleContainer>
         <MissionDesc>
           {" "}
-          "To collaborate with our customers and provide solutions which are
-          easy to implement, manage, maintain and at the same time cost
-          effective" We will achieve this by meeting our customer business
-          requirements through continuous innovation, best - of - breed products
-          and excellent services support thus adding value and contributing to
-          their success.{" "}
+          <b>
+            {" "}
+            "To collaborate with our customers and provide solutions which are
+            easy to implement, manage, maintain and at the same time cost
+            effective"
+          </b>{" "}
+          We will achieve this by meeting our customer business requirements
+          through continuous innovation, best - of - breed products and
+          excellent services support thus adding value and contributing to their
+          success.{" "}
         </MissionDesc>{" "}
         <MissionDesc>
           {" "}
           Let `s help your business achieve its Goals and Technology needs. Our
-          Expert Engineers solve Critical IT Challenges. What` s Yours ? Contact
-          us Today{" "}
+          Expert Engineers solve Critical IT Challenges. What` s Yours ?{" "}
+          <a href="#contact">
+            {" "}
+            <b>Contact us Today</b>
+          </a>{" "}
         </MissionDesc>
       </TitleContainer>
     </Container>

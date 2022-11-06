@@ -27,28 +27,28 @@ const Portfolio = () => {
 
       <PortContainer>
         <PortImg1>
-          <img src="images/centrixhome.jpg" />
+          <img src="images/servers.jpg" />
           <DescriptionContainer>
             <PortDesc1>Servers & Storage </PortDesc1>{" "}
           </DescriptionContainer>
         </PortImg1>
 
         <PortImg1>
-          <img src="images/printers.jpg" />
+          <img src="images/printers.JPG" />
           <DescriptionContainer>
             <PortDesc1> Printers & Photocopiers </PortDesc1>{" "}
           </DescriptionContainer>
         </PortImg1>
 
         <PortImg1>
-          <img src="images/laptop.jpg" />
+          <img src="images/laptop.JPG" />
           <DescriptionContainer>
             <PortDesc1> Laptops, PCs & Monitor </PortDesc1>{" "}
           </DescriptionContainer>
         </PortImg1>
 
         <PortImg2>
-          <img src="images/switch3.jpg" />
+          <img src="images/switch3.JPG" />
           <DescriptionContainer>
             <PortDesc2>
               {" "}
@@ -58,7 +58,7 @@ const Portfolio = () => {
         </PortImg2>
 
         <PortImg1>
-          <img src="images/phone.jpg" />
+          <img src="images/phone.JPG" />
           <DescriptionContainer>
             <PortDesc2>
               {" "}
@@ -68,7 +68,7 @@ const Portfolio = () => {
         </PortImg1>
 
         <PortImg1>
-          <img src="images/cabling.jpg" />
+          <img src="images/cabling.PJG" />
           <DescriptionContainer>
             <PortDesc3>
               {" "}

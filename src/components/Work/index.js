@@ -26,7 +26,10 @@ const Work = () => {
         <WorkTitle> WHAT WE DO </WorkTitle>
       </Wrapper1>
       <Wrapper1>
-        <WorkHead> SIMPLIFYING ENTERPRISE IT. </WorkHead>
+        <WorkHead>
+          {" "}
+          <b>SIMPLIFYING</b> ENTERPRISE IT.{" "}
+        </WorkHead>
         <WorkDesc>
           {" "}
           Our Core focus is providing leading edge technology services and
@@ -54,7 +57,7 @@ const Work = () => {
               <li>
                 Next-Generation Firewalls & Intrusion Prevention Systems.{" "}
               </li>
-              <li>Software Defined Networks (SDN}</li>
+              <li>Software Defined Networks (SDN)</li>
               <li>LAN & WAN Networks </li>
               <li>Wireless Networks</li>
             </ul>

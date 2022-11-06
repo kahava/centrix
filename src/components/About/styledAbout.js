@@ -51,7 +51,12 @@ export const MissionDesc = styled.p`
   padding: 0 2%;
   margin: 0;
   color: #00004d;
+
   @media screen and (min-width: 37.5em) {
     margin-top: 1em;
+  }
+
+  a {
+    text-decoration: none;
   }
 `;

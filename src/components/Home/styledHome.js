@@ -48,7 +48,7 @@ export const HomePara = styled(motion.h2)`
 
 export const HomeHead = styled(motion.h1)`
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: -3em;
   padding: 0 0.5em;
   margin-bottom: 0;
@@ -56,17 +56,18 @@ export const HomeHead = styled(motion.h1)`
 
   @media screen and (min-width: 40em) {
     margin-top: 0;
-    font-size: 3em;
+    font-size: 3.5em;
   }
 
   @media screen and (min-width: 45em) {
-    font-size: 3.5em;
+    font-size: 4em;
   }
 `;
 
 export const Button1 = styled(motion.button)`
-  color: #fff;
+  color: #00004d;
   font-weight: 700;
+  font-size: 0.75rem;
   height: 3em;
   width: 12.3em;
   border: none;
@@ -93,6 +94,7 @@ export const Button1 = styled(motion.button)`
     margin-bottom: 0;
     padding: 0;
     margin-right: 1em;
+    font-size: 1rem;
   }
 `;
 
