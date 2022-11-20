@@ -6,7 +6,6 @@ import {
   PortDesc1,
   PortImg2,
   PortDesc2,
-  PortImg3,
   PortDesc3,
   VirtualContainer,
   VirtualImg,
@@ -27,28 +26,28 @@ const Portfolio = () => {
 
       <PortContainer>
         <PortImg1>
-          <img src="images/servers.jpg" />
+          <img src="images/servers.jpg" alt="Servers" />
           <DescriptionContainer>
             <PortDesc1>Servers & Storage </PortDesc1>{" "}
           </DescriptionContainer>
         </PortImg1>
 
         <PortImg1>
-          <img src="images/printers.JPG" />
+          <img src="images/printers.JPG" alt="Printers" />
           <DescriptionContainer>
             <PortDesc1> Printers & Photocopiers </PortDesc1>{" "}
           </DescriptionContainer>
         </PortImg1>
 
         <PortImg1>
-          <img src="images/laptop.JPG" />
+          <img src="images/laptop.JPG" alt="laptops" />
           <DescriptionContainer>
             <PortDesc1> Laptops, PCs & Monitor </PortDesc1>{" "}
           </DescriptionContainer>
         </PortImg1>
 
         <PortImg2>
-          <img src="images/switch3.JPG" />
+          <img src="images/switch3.JPG" alt="switches for networking" />
           <DescriptionContainer>
             <PortDesc2>
               {" "}
@@ -58,7 +57,7 @@ const Portfolio = () => {
         </PortImg2>
 
         <PortImg1>
-          <img src="images/phone.JPG" />
+          <img src="images/phone.JPG" alt="Desk phones" />
           <DescriptionContainer>
             <PortDesc2>
               {" "}
@@ -68,7 +67,7 @@ const Portfolio = () => {
         </PortImg1>
 
         <PortImg1>
-          <img src="images/cabling.PJG" />
+          <img src="images/cabling.JPG" alt="Network Cables" />
           <DescriptionContainer>
             <PortDesc3>
               {" "}
@@ -79,8 +78,8 @@ const Portfolio = () => {
       </PortContainer>
       <VirtualContainer>
         <VirtualImg>
-          <img src="images/office.jpg" />
-          <img src="images/cannon.jpg" />
+          <img src="images/office.jpg" alt="Microsoft office licencing" />
+          <img src="images/cannon.jpg" alt="Cannon licencing" />
         </VirtualImg>
         <Virtualhead>Software License & Virtualization</Virtualhead>
       </VirtualContainer>

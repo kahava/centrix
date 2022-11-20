@@ -234,28 +234,30 @@ export const FooterPara = styled.p`
 `;
 
 export const Insta = styled(AiFillInstagram)`
-  background-color: #fb3958;
-  height: 1.8em;
-  width: 1.8em;
+  /* background-color: #fb3958; */
+  background-color: #3b5998;
+  color: #fff;
+  height: 2em;
+  width: 2em;
   border-radius: 20%;
 `;
 export const Faceb = styled(FaFacebookF)`
   color: #3b5998;
   margin-left: 0.5em;
-  height: 1.8em;
-  width: 1.8em;
+  height: 2em;
+  width: 2em;
 `;
 export const LinkedIn = styled(BsLinkedin)`
   color: #3b5998;
   margin-left: 0.5em;
-  height: 1.8em;
-  width: 1.8em;
+  height: 2em;
+  width: 2em;
 `;
 export const Twitter = styled(BsTwitter)`
   color: #3b5998;
   margin-left: 0.5em;
-  height: 1.8em;
-  width: 1.8em;
+  height: 2em;
+  width: 2em;
 `;
 
 export const Location = styled(ImLocation2)`

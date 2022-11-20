@@ -1,5 +1,20 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
+
+export const scrolled = keyframes`
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*8));
+    }
+`;
+
+export const TechScroller = styled.div`
+  display: flex;
+  width: calc(250px * 16);
+  animation: ${scrolled} 30s linear infinite;
+`;
 
 export const Container = styled.div`
   height: auto;
@@ -26,38 +41,15 @@ export const TechDesc = styled(motion.p)`
   margin-top: 0;
   margin-bottom: 0.2em;
 `;
+
 export const TechImgContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  height: 250px;
+  margin: auto;
+  position: relative;
   width: 95%;
-  padding: 0;
-  margin: 0;
-  /* grid-gap: 0.5em; */
-  place-content: center;
-  height: auto;
-
-  @media screen and (min-width: 200px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-  @media screen and (min-width: 20em) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-  }
-
-  @media screen and (min-width: 29.375em) {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-  }
-  @media screen and (min-width: 38.75em) {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-  }
-
-  @media screen and (min-width: 48.125em) {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto;
-  }
+  display: grid;
+  place-items: center;
+  overflow: hidden;
 `;
 
 export const Wrapper1 = styled.div`
@@ -71,32 +63,15 @@ export const Wrapper1 = styled.div`
   background-color: #000;
 `;
 
-// export const ImgCard = styled(motion.div)
-// `
-// display: flex;
-// flex-direction: column;
-// width: auto;
-// align-items: center;
-// justify-content: center;
-// border-radius: 0.75em;
-// padding-bottom: 1em;
-// margin: 0 1em 1.25em 1em ;
-// box-shadow: rgba( 0, 0, 0, 0.35) 0px 5px 15px;
-// @media screen and (min-width: 37.5em) {
-//  display: grid;
-//  grid-template-columns: 1fr 2fr;
-// }
-// `;
-
 export const TechImg = styled.div`
-  margin: 0;
-  padding: 0;
-  align-content: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
+  height: 200px;
+  width: 250px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+
   img {
     width: 100%;
-    height: 15.625em;
+    height: auto;
   }
 `;

@@ -5,6 +5,7 @@ import {
   TechDesc,
   TechImg,
   Wrapper1,
+  TechScroller,
 } from "./styledAbout";
 
 const Technology = () => {
@@ -24,37 +25,70 @@ const Technology = () => {
       </Wrapper1>
 
       <TechImgContainer>
-        <TechImg>
-          <img src="images/cisco.jpg" alt="" />{" "}
-        </TechImg>
+        <TechScroller>
+          <TechImg>
+            <img src="images/cisco.jpg" alt="Cisco Logo" />{" "}
+          </TechImg>
 
-        <TechImg>
-          <img src="images/fort.jpg" alt="" />{" "}
-        </TechImg>
+          <TechImg>
+            <img src="images/fort.jpg" alt="Fortinet Logo" />{" "}
+          </TechImg>
 
-        <TechImg>
-          <img src="images/del.jpg" alt="" />{" "}
-        </TechImg>
+          <TechImg>
+            <img src="images/del.jpg" alt="Del Logo" />{" "}
+          </TechImg>
 
-        <TechImg>
-          <img src="images/vm.jpg" alt="" />{" "}
-        </TechImg>
+          <TechImg>
+            <img src="images/vm.jpg" alt="VMware Logo" />{" "}
+          </TechImg>
 
-        <TechImg>
-          <img src="images/sof.jpg" alt="" />{" "}
-        </TechImg>
+          <TechImg>
+            <img src="images/sof.jpg" alt="Sophos Logo" />{" "}
+          </TechImg>
 
-        <TechImg>
-          <img src="images/micro.jpg" alt="" />{" "}
-        </TechImg>
+          <TechImg>
+            <img src="images/micro.jpg" alt="Microsoft Logo" />{" "}
+          </TechImg>
 
-        <TechImg>
-          <img src="images/veem.jpg" alt="" />{" "}
-        </TechImg>
+          <TechImg>
+            <img src="images/veem.jpg" alt="Veeam Logo" />{" "}
+          </TechImg>
 
-        <TechImg>
-          <img src="images/veri.jpg" alt="" />{" "}
-        </TechImg>
+          <TechImg>
+            <img src="images/veri.jpg" alt="Veritus Logo" />{" "}
+          </TechImg>
+          <TechImg>
+            <img src="images/cisco.jpg" alt="Cisco Logo" />{" "}
+          </TechImg>
+
+          <TechImg>
+            <img src="images/fort.jpg" alt="Fortinet Logo" />{" "}
+          </TechImg>
+
+          <TechImg>
+            <img src="images/del.jpg" alt="Del Logo" />{" "}
+          </TechImg>
+
+          <TechImg>
+            <img src="images/vm.jpg" alt="VMware Logo" />{" "}
+          </TechImg>
+
+          <TechImg>
+            <img src="images/sof.jpg" alt="Sophos Logo" />{" "}
+          </TechImg>
+
+          <TechImg>
+            <img src="images/micro.jpg" alt="Microsoft Logo" />{" "}
+          </TechImg>
+
+          <TechImg>
+            <img src="images/veem.jpg" alt="Veeam Logo" />{" "}
+          </TechImg>
+
+          <TechImg>
+            <img src="images/veri.jpg" alt="Veritus Logo" />{" "}
+          </TechImg>
+        </TechScroller>
       </TechImgContainer>
     </Container>
   );

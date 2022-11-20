@@ -110,7 +110,7 @@ const ContactUs = () => {
             <span>
               <ul>
                 <li>CBD Dar es Salaam</li>
-                <li>15 Sofia Kawawa/Lindi Street</li>
+                <li>15 Sofia kawawa/Lindi Street</li>
                 <li>P.O.Box 3081</li>
                 <li>11105 Dar es Salaam, Tanzania</li>
               </ul>
@@ -174,7 +174,6 @@ const ContactUs = () => {
               <label>First Name</label>
               <input
                 type="text"
-                placeholder="John"
                 required
                 name="first_name"
                 onChange={handleChange}
@@ -188,7 +187,6 @@ const ContactUs = () => {
                 type="text"
                 required
                 name="last_name"
-                placeholder="Doe"
                 onChange={handleChange}
                 value={values.last_name}
               />

@@ -56,6 +56,8 @@ export const NavLinks = styled.ul`
   list-style: none;
   justify-content: space-around;
   align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
 
   li {
     color: #000;
@@ -68,6 +70,6 @@ export const NavLink = styled(Link).attrs(() => ({
 }))`
   display: flex;
   &.active {
-    border-bottom: 3px solid aliceblue;
+    border-bottom: 3px solid #0c8fbf;
   }
 `;
